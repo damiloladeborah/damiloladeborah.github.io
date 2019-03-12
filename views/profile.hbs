@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile page</title>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+
+	      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img class= "logo" alt="Skill Hub" src="img/skill.jpg">
+          </div>
+        </div>
+      </nav>
+
+    <div class="signIn">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="image text-center">
+                    <img src = img/logo.jpg> Profile Page
+                </div>
+                <div class ="propic text-center">
+                	<img src="uploads/{{user.profile_pic}}">
+                </div>
+                <div class ="info">
+                	Name: {{user.last_name}} {{user.first_name}}<br><br>
+                	Username: {{user.username}}<br><br>
+                	Email Address: {{user.email}}<br><br>
+                    Phone Number: {{user.phone_number}}<br><br>
+                	Skill: {{user.skill}}<br><br>
+                	Short-Bio: {{user.short_bio}}<br><br>
+                </div>
+            </div>
+            <span><p class="edit"> <a href="#"> <img src ="img/edit.png">edit profile</a></p></span>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.signIn{
+  margin: 5% 10% 10% 10%;
+  }
+
+ .image{
+ 	padding-top: 10%;
+ 	padding-bottom: 10%;
+ }
+
+ .propic img{
+ 	width:40%;
+ 	border-radius: 50%;
+ }
+
+ .edit{
+ 	padding-top: 5%;
+ 	padding-left: 10%;
+ }
+
+ .edit img{
+ 	width: 3%;
+ }
+
+ .edit a{
+ 	list-style-type: none;
+ 	color: black;
+ }
+
+ .info{
+ 	padding-top: 10%;
+ 	padding-left: 20%;
+ }

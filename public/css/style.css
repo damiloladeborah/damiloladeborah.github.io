@@ -1,0 +1,164 @@
+
+.bg1{
+	background-image: url('../img/carousel_image_2_teacher.jpg');
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg2{
+	background-image: url('../img/real3.jpeg');
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center;
+	background-color: #380000;
+	background-blend-mode:luminosity;
+
+	
+}
+
+.bg3{
+	background-image: url('../img/real2.jpeg');
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center;
+	background-color: #36454F;
+	background-blend-mode:luminosity;
+}
+
+.donate{
+	background-color: white;
+}
+
+.head{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.head img{
+	width:5%;
+}
+
+.head ul li{
+	display: inline;
+	padding: 0 15px 0 15px;
+	color: white;
+}
+
+.link{
+	float: right;
+}
+
+
+.water{
+
+	padding-bottom: 10%;
+	padding-top: 5%;
+
+}
+
+.water h1{
+	color: white;
+	padding-left: 5%
+}
+.water p{
+	color: white;
+	padding-left: 5%;
+}
+
+
+
+.words{
+	padding: 5% 0 0 10%;
+}
+
+.video{
+	padding-left: 10%;
+    height: 300px;
+    width: 400px;
+
+}
+
+.video video{
+	width: 250px;
+	height: 150px;
+}
+
+.events{
+	padding: -30px 80px 0 80px;
+}
+
+
+.act{
+	font-size: 250%;
+	color: #800000;
+}
+.inact{
+	font-size: 250%;
+	color: #000000;
+}
+
+
+.more{
+	background-color: #800000;
+	color: white;
+	font-size: 100%;
+}
+
+.moreb{
+	background-color: #000000;
+	color: white;
+	font-size:100%;
+}
+
+.foot{
+	color: white;
+}
+.footer{
+	background-color: #343132;
+	padding: 30px 10px 30px 10px;
+}
+
+.footlink {
+	padding: 0 30px 0 30px;
+	color: #cccccc;
+}
+
+hr { 
+	background-color: #201D1E; 
+	height: 1px; 
+	border: 0; 
+}
+
+.logo img{
+	width:10%;
+	padding: 10px 0 10px 0;
+}
+
+.boxred{
+	background-color: #800000;
+	border: 0
+}
+.boxred a{
+	color: white;
+}
+.boxdark{
+	background-color: #706D6E;
+	border: 0;
+}
+
+.contact{
+	font-size: 120%;
+}
+.address{
+	font-size: 90%;
+}
+
+.right{
+	text-align: right;
+}
+
+.last{
+	text-align: center;
+	color: #706D6E;
+}

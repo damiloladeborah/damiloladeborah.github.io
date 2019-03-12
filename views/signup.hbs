@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/signIn.css">
+
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img alt="Skill Hub" src="img/skill.jpg" class="img-responsive">
+          </div>
+          <div class="collapse navbar-collapse home" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+             <li><a href="#">Become a Seller</a></li>
+              <li><a href="/signin">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="signUp">
+          <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="imag text-center">
+                    <img src = img/logo.jpg >
+                  </div>
+                  {{#if message}}
+                  <div class="alert alert-danger" role="alert">
+                    {{message}}
+                  </div>
+                  {{/if}}
+                  <form class="form-horizontal" role="form" action="/signup" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">First Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" name="first_name" required>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Last Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" name="last_name" required>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" name="username" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password2">
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Email Address</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" name="email">
+                      </div>
+                    </div>
+                      <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Phone Nummber</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" name="phone_number" required>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label" >Skill</label>
+                       <select name="skill">
+                         <option>Add a Skill</option>
+                         <option value="graphics">Graphic Design</option>
+                         <option value="event">Event Decoration</option>
+                         <option value="fashion">Fashion Design</option>
+                         <option value="makeup">Make up and Gele</option>
+                         <option value="software">Software Development</option>
+                         <option value="hair stylist">Hair Stylist</option>
+                       </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Sell Yourself</label>
+                      <textarea id="example-three" placeholder="I will ..." cols="30" rows="5" name="short_bio"></textarea>
+
+                      <!--<textarea id="example-three" placeholder="I will ..." style="margin: 0; padding: 0; width: 300px; height: 100px;">-->
+                      </textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputFile" class="col-sm-2 control-label">Profile picture</label>
+                      <div class="col-sm-10">
+                        <input type="file" id="exampleInputFile" name="image">
+                      </div>
+                   </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Sign up</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+          </div>
+      </div>
+      <div class="foot text-center">
+        <a href="#">About</a>
+        <span class="pad">
+          <a href="#">Partner with us</a>
+          <a href="#">Help</a>
+        </span>
+      </div>
+      <div class="sh text-center">
+        <p><img class= "logup" alt="Skill Hub" src="img/skill.jpg"> <span class="skill">Skill</span><span class="hub">Hub</span> Coporation &copy 2018</p>
+      </div>
+    </div>
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+
+  $(".dropdown-menu li").click(function(){
+
+    $(".btne:first-child").text($(this).text());
+
+    if (!elementSupportsAttribute('textarea', 'placeholder')) {
+      // Fallback for browsers that don't support HTML5 placeholder attribute
+      $("#example-three")
+          .data("originalText", $("#example-three").text())
+          .css("color", "#999")
+          .focus(function() {
+            var $el = $(this);
+            if (this.value == $el.data("originalText")) {
+              this.value = "";
+            }
+          })
+          .blur(function() {
+            if (this.value == "") {
+              this.value = $(this).data("originalText");
+            }
+          });
+    } else {
+      // Browser does support HTML5 placeholder attribute, so use it.
+      $("#example-three")
+          .attr("placeholder", $("#example-three").text())
+          .text("");
+    }
+
+  });
+
+});
+      function resetCursor(txtElement) {
+        if (txtElement.setSelectionRange) {
+          txtElement.focus();
+          txtElement.setSelectionRange(0, 0);
+        } else if (txtElement.createTextRange) {
+          var range = txtElement.createTextRange();
+          range.moveStart('character', 0);
+          range.select();
+        }
+      }
+
+      var textarea = document.querySelector("textarea");
+
+    </script>
+  </body>
+</html>

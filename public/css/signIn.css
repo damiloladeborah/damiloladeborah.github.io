@@ -1,0 +1,179 @@
+body{
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo{
+	width: 40%;
+}
+
+.signIn{
+  margin: 5% 10% 10% 10%;
+  background-color: #ccc;
+ }
+
+.image{
+	padding-top: 10%;
+}
+.image img{
+	width: 50%;
+}
+
+.member{
+	padding-left: 10%;
+
+}
+
+.foot{
+	color: white;
+	margin-top: -7%;
+	margin-bottom: 3%;
+}
+
+.signUp{
+  margin: 10% 10% 10% 10%;
+  
+ }
+
+ .body{
+ 	padding-top: 60px;
+ }
+
+
+ .imag{
+ 	margin-bottom: 5%;
+ }
+
+ .imag img{
+	width: 50%;
+}
+
+.but{
+	padding-left: 3%;
+}
+
+.btne{
+	background-color: white;
+	color: black;
+}
+
+.foot a{
+	color: #777;
+}
+.log{
+	width: 7%;
+}
+.hub{
+	color: blue;
+}
+.skill{
+	color: black;
+}
+
+.pad a{
+	padding-left: 3%;
+}
+
+.logup{
+	width: 7%;
+
+}
+
+.find{
+	margin-top: 2%;
+}
+
+.seller{
+	margin-top: 1%;
+}
+
+.list{
+	font-size: 100%;
+
+}
+
+.list a{
+	color: #777;
+}
+
+hr { 
+	background-color: #cccccc; 
+	height: 1px; 
+	border: 0; 
+}
+.nail{
+	height: 450px;
+}
+.scolor{
+	background-color: #4863A0;
+	color: white;
+}
+
+.mjoin{
+	margin-top:;
+}
+.cjoin{
+	background-color: #4863A0;
+	color: white;
+}
+
+.BSJ{
+	margin-top: 5%;
+}
+
+.skills img{
+	width: 100%;
+	height: 250px;
+}
+
+.hire img{
+	width: 50px;
+	height: 45px;
+	border-radius: 50%;
+	
+}
+.name{
+	font-size: 120%;
+	font-style: bold;
+}
+
+.butedit{
+	background-color: #777;
+}
+
+
+.footer{
+	background-color: #BCC6CC;
+}
+.footer ul{
+	list-style-type: none;
+}
+.footer a{
+	color: #777;
+}
+.footer hr{
+	background-color: #848482; 
+	height: 1px; 
+	border: 0;
+}
+.footer img{
+	padding-left: 2%;
+}
+.social img{
+	width:7%;
+	padding: 0 0 10px 0;
+}
+.follow{
+	font-size: 150%;
+	padding-right: 3%;
+}
+
+
+.footer ul li{
+	color: ;
+}
+.list a{
+	color: #151B8D;
+} 

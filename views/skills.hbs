@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skill Hub</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/signIn.css">
+
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+            	<div class="navbar-header">
+                    <img alt="Skill Hub" src="img/skill.jpg" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 find">
+              <form action="/search" method="get">
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Find Services" aria-describedby="basic-addon2" name="search">
+                    <span class="input-group-addon"  id="basic-addon2">Search</span>
+                </div>
+              </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 seller">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><div class="home">Become a Seller</div></a></li>
+        <li><a href="/signin">SignIn</a></li>
+        <li><a href="/signup">Join</a></li>
+             </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+            </div>
+        </div>
+        <hr>
+        <div class="list">
+        	<div class="row">
+        		<div class="col-xs-4 col-sm-4 col-md-2"><a href="/graphics">Graphics & Design</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2"><a href="/software">Software Development</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2"><a href="/event">Event Decoration</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2"><a href="/fashion">Fashion & Design</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2"><a href="/hair-stylist">Hair Stylist</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2"><a href="/makeup">Makeup & Gele </a></div>
+        	</div>
+        </div>
+        <hr>
+        <div class=" skills">
+        	<h1>All skills</h1>
+            <div class="row">
+              {{#users}}
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="uploads/{{profile_pic}}" alt="..."/>
+                            <div class="caption">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 hire">
+                                        <img src="uploads/{{profile_pic}}" class="img-responsive"  alt="...">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-8">
+                                        <p><span class="name">{{first_name}} {{last_name}}</span></p>
+                                    </div>
+                                </div>
+                                <p> {{short_bio}}</p>
+                                <p><a href="#" class="btn btn-primary butedit" role="button">Hire here</a> starting at N500</p>
+                            </div>
+                    </div>
+                </div>
+                {{/users}}
+           </div>
+        </div>
+        <div class="footer">
+        	<div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                	<ul>
+                		<li><h3>Sub-Headings</h3></li>
+                		<li><a href="#">Testimonies</a></li>
+                		<li><a href="#">Awards</a></li>
+                		<li><a href="#">Internship</a></li>
+                		<li><a href="#">Prizes</a></li>
+
+
+                	</ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                	<ul>
+                		<li><h3>About</h3></li>
+                		<li><a href="#">Careers</a></li>
+                		<li><a href="#">Press & News</a></li>
+                		<li><a href="#">Privacy Policy</a></li>
+                		<li><a href="#">Terms of Service</a></li>
+                	</ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                	<ul>
+                		<li><h3>Community</h3></li>
+                		<li><a href="#">Blog</a></li>
+                		<li><a href="#">Forum</a></li>
+                		<li><a href="#">Podcast</a></li>
+                		<li><a href="#">Affiliates</a></li>
+                		<li><a href="#">Invite a Friend</a></li>
+                	</ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                	<ul>
+                		<li><h3>Support</h3></li>
+                		<li><a href="#">Contact Support</a></li>
+                		<li><a href="#">Help</a></li>
+                		<li><a href="#">Trust & Safety</a></li>
+                		<li><a href="#">Exploring on SkillHub</a></li>
+                	</ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-7">
+            	    <p><img src = img/logo.jpg > SkillHub &copy 2018 Alright Reserved</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <p class="social"><span class="follow">Follow Us</span>
+                        <img src="img/facebook1.jpg">
+                        <img src="img/twitter1.jpg">
+                        <img src="img/google.jpg">
+                    </p>
+                </div>
+            </div>
+        </div>
+  	</div>
+  </body>
+</html>
